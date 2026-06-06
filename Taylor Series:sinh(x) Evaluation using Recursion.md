@@ -23,8 +23,26 @@ To write a Python program to evaluate the value of **sinh(x)** for **n terms** u
 
 ## 💻 PROGRAM:
 
-ADD CODE HERE
+```
+def fact(i):
+   if i==1 or i==0:
+       return 1
+   else:
+       return i*fact(i-1)
+def sine(x,n):
+  if n==0:
+    return x
+  else:
+    return(((((-1)**n)*pow(x,(2*n+1)))/fact(2*n+1)))+sine(x,n-1)
+x=int(input())
+n=int(input())
+print(sine(x,n))
+```
 
 ## OUTPUT
 
+<img width="408" height="146" alt="image" src="https://github.com/user-attachments/assets/f67f8f59-34e5-4527-9548-416106fe7e6a" />
+
+
 ## RESULT
+Program is successfully verified.
