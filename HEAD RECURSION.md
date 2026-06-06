@@ -17,8 +17,21 @@ To write a Python program to demonstrate **Head Recursion** by finding and print
 
 ## 💻 PROGRAM:
 
-ADD CODE HERE
+```
+python
+
+def fun(n):
+    if n > 0: fun(n-2); print(n, end=" ")
+
+x = int(input())
+fun(x if x % 2 == 0 else x - 1)
+```
 
 ## OUTPUT
 
+<img width="843" height="211" alt="image" src="https://github.com/user-attachments/assets/a94bae4c-61bc-4b65-803b-3996fc9211c5" />
+
+
 ## RESULT
+
+Thus, the program has been successfully executed.
