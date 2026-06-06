@@ -20,9 +20,22 @@ To write a Python program to check whether a given string is a **palindrome** us
 ---
 
 ## 💻 PROGRAM:
-ADD CODE HERE
 
+```
+l=[]
+def SUM(n):
+   if n==0:
+      return 1
+dig=n%10
+l.append(dig)
+SUM(n//10)
+n=int(input())
+SUM(n) print(sum(l))
+```
 ## OUTPUT
 
-## RESULT
+<img width="268" height="147" alt="image" src="https://github.com/user-attachments/assets/82adb0aa-14e1-4934-b623-ed4520cadbba" />
 
+
+## RESULT
+Program successfully verified.
